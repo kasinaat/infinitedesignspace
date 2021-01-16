@@ -1,0 +1,345 @@
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.et-hero-tabs, .et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+.bg {
+    height: 50vh;
+    opacity: 80%;
+    animation: infinite-rotate 5s infinite;
+}
+@keyframes infinite-rotate {  
+    0% { -webkit-transform: rotatex(0deg); }
+    /* 25%{ -webkit-transform: rotate(90deg);} */
+    50%{ -webkit-transform: rotatey(180deg);}
+    /* 75%{ -webkit-transform: rotate(270deg);} */
+    100% { -webkit-transform: rotatex(360deg); }
+}
+@media only screen and (max-device-width: 1366px) {
+    .bg {
+        background-attachment: scroll;
+    }
+}  
+.et-hero-tabs h1, .et-slide h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 2pt;
+
+}
+.et-hero-tabs h3, .et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+.et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+}
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+}
+.et-hero-tab:hover {
+    color: #000;
+    background: rgba(211, 212, 212, 0.8);
+    transition: all 0.5s ease;
+}
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66b1f1;
+    transition: left 0.3s ease;
+}
+@media (min-width: 800px) {
+    .et-hero-tabs h1, .et-slide h1 {
+        font-size: 3rem;
+   }
+    .et-hero-tabs h3, .et-slide h3 {
+        font-size: 1rem;
+   }
+    .et-hero-tab {
+        font-size: 1rem;
+   }
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(141, 137, 137);
+}
+.in-mt-140{
+    margin-top: 140px;
+}
+.company-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.company-title-bold{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.company-summary{
+    text-align: left;
+}
+.company-banner{
+    font-size: 2rem;
+    text-align: left;
+    letter-spacing: 0.16rem;
+}
+
+.typewriter h2{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid black; /* The typwriter cursor */
+    white-space: nowrap;  /*Keeps the content on a single line */
+    margin: 0 auto;  /*Gives that scrolling effect as the typing happens*/
+    animation: 
+      typing 6s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    /* from { width: 0 }
+    to { width: 100% } */
+    0% {
+        width: 0%;
+      }
+    
+      /* Finish changes by here */
+      67% {
+        width: 100%;
+      }
+    
+      /* Between 20% and 100%, nothing changes */
+      100% {
+       width: 100%;
+      }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+  .company-landing{
+      animation: ease-in 5s infinite;
+  }
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+   }
+  
+  
+  .mouse_scroll {
+      display: block;
+      margin: 0 auto;
+      width: 24px;
+      height: 100px;
+      margin-top: 125px;
+      cursor: pointer;
+  }
+  
+  
+  .m_scroll_arrows
+  {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+     
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0 0 3px 4px;
+    
+    width: 16px;
+    height: 16px;
+  }
+  
+  
+  .unu
+  {
+    margin-top: 1px;
+  }
+  
+  .unu, .doi, .trei
+  {
+      -webkit-animation: mouse-scroll 1s infinite;
+      -moz-animation: mouse-scroll 1s infinite;
+      animation: mouse-scroll 1s infinite;
+    
+  }
+  
+  .unu
+  {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+    
+    animation-direction: alternate;
+    animation-delay: alternate;
+  }
+  
+  .doi
+  {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    
+    animation-delay: .2s;
+    animation-direction: alternate;
+    
+    margin-top: -6px;
+  }
+  
+  .trei
+  {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+    
+    animation-delay: .3s;
+    animation-direction: alternate;
+    
+    
+    margin-top: -6px;
+  }
+  
+  .mouse {
+    height: 42px;
+    width: 24px;
+    border-radius: 14px;
+    transform: none;
+    border: 2px solid rgb(0, 0, 0);
+    top: 170px;
+  }
+  
+  .wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: black;
+    position: relative;
+    
+    height: 4px;
+    width: 4px;
+    border: 2px solid #000;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+  }
+  
+  .wheel {
+    -webkit-animation: mouse-wheel 0.6s linear infinite;
+    -moz-animation: mouse-wheel 0.6s linear infinite;
+    animation: mouse-wheel 0.6s linear infinite;
+  }
+  
+  @-webkit-keyframes mouse-wheel{
+     0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-moz-keyframes mouse-wheel {
+    0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @-o-keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  
+  @-webkit-keyframes mouse-scroll {
+  
+    0%   { opacity: 0;}
+    50%  { opacity: .5;}
+    100% { opacity: 1;}
+  }
+  @-moz-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  

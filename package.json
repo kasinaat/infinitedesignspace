@@ -1,0 +1,22 @@
+{
+  "name": "infinite-design-space",
+  "version": "1.0.0",
+  "description": "Landing website for Infinite Design Space Architects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "infinte",
+    "design",
+    "architecture"
+  ],
+  "author": "SSK",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
