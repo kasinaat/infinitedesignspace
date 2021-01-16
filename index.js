@@ -6,4 +6,4 @@ app.listen(3000,function(){
     console.log("App started in port 3000");
 });
 
-app.use(express.static('./infinite-ui/dist'));
+app.use(express.static('./dist'));
