@@ -16,9 +16,16 @@ a {
     padding: 0 2em;
 }
 .bg {
-    height: 50vh;
-    opacity: 80%;
-    animation: infinite-rotate 5s infinite;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: contain;
+    background-blend-mode: soft-light;
+    animation: zoomout 5s;
+    animation-fill-mode: forwards; 
 }
 @keyframes infinite-rotate {  
     0% { -webkit-transform: rotatex(0deg); }
@@ -32,6 +39,10 @@ a {
         background-attachment: scroll;
     }
 }  
+@keyframes zoomout {
+    from{ transform: scale(1);}
+    to{transform: scale(1.5);}
+}
 .et-hero-tabs h1, .et-slide h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -59,20 +70,30 @@ a {
     top: 0;
 }
 .et-hero-tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    display: inline-block;
     color: #000;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 0.8rem;
+    width: 15%;
 }
-.et-hero-tab:hover {
+.et-tab{
+    cursor: pointer;
+    display: inline-block;
+    min-width: 12%;
+    text-align: center;
+    margin-top: 3%;
+}
+.top-logo{
+    display: inline-block;
+    width: 12%;
+    margin-left: 12%;
+}
+/* .et-hero-tab:hover {
     color: #000;
     background: rgba(211, 212, 212, 0.8);
     transition: all 0.5s ease;
-}
+} */
 .et-hero-tab-slider {
     position: absolute;
     bottom: 0;
@@ -80,6 +101,17 @@ a {
     height: 6px;
     background: #66b1f1;
     transition: left 0.3s ease;
+}
+.top-logo-text{
+    font-size: 2rem;
+    margin-top: 0.9%;
+    display: inline-block;
+    position: absolute;
+}
+@media (max-width: 800px) {
+    .top-logo, .top-logo-text{
+        display: none;
+    }
 }
 @media (min-width: 800px) {
     .et-hero-tabs h1, .et-slide h1 {
@@ -177,8 +209,8 @@ a {
       display: block;
       margin: 0 auto;
       width: 24px;
-      height: 100px;
-      margin-top: 125px;
+      /* height: 100px; */
+      /* margin-top: 125px; */
       cursor: pointer;
   }
   
