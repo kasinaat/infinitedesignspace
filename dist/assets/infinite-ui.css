@@ -4,6 +4,9 @@ body {
 a {
     text-decoration: none;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .et-hero-tabs, .et-slide {
     display: flex;
     flex-direction: column;
@@ -24,8 +27,22 @@ a {
     background-position: center center;
     background-size: contain;
     background-blend-mode: soft-light;
-    animation: zoomout 5s;
-    animation-fill-mode: forwards; 
+}
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+}
+.ids-landing-text{
+  display: block;
+  margin-top: 50px;
+  animation: zoomout 4s;
+  animation-fill-mode: forwards; 
 }
 @keyframes infinite-rotate {  
     0% { -webkit-transform: rotatex(0deg); }
@@ -40,8 +57,8 @@ a {
     }
 }  
 @keyframes zoomout {
-    from{ transform: scale(1);}
-    to{transform: scale(1.5);}
+    0%{ transform: scale(1);}
+    100%{transform: scale(1.5);}
 }
 .et-hero-tabs h1, .et-slide h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -77,6 +94,12 @@ a {
     font-size: 0.8rem;
     width: 15%;
 }
+.text-darker{
+  font-weight: bolder;
+}
+.pull-right{
+  float: right;
+}
 .et-tab{
     cursor: pointer;
     display: inline-block;
@@ -86,9 +109,10 @@ a {
 }
 .top-logo{
     display: inline-block;
-    width: 12%;
+    width: 8%;
     margin-left: 12%;
-}
+    margin-top: 2%
+  }
 /* .et-hero-tab:hover {
     color: #000;
     background: rgba(211, 212, 212, 0.8);
@@ -103,10 +127,10 @@ a {
     transition: left 0.3s ease;
 }
 .top-logo-text{
-    font-size: 2rem;
-    margin-top: 0.9%;
+    font-size: 25px;
+    margin-top: 1.2%;
     display: inline-block;
-    position: absolute;
+    position: absolute
 }
 @media (max-width: 800px) {
     .top-logo, .top-logo-text{
@@ -226,10 +250,10 @@ a {
      
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    margin: 0 0 3px 4px;
+    margin: 0 0 16px -2px;
     
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
   }
   
   
@@ -375,3 +399,39 @@ a {
     100% { opacity: 1; }
   }
   
+.ids-loader{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  position: fixed;
+  /* animation:loading 4s;
+  animation-fill-mode: forwards; */
+}
+.ids-loader-image{
+  width: 24px;
+  display: block;
+  margin:auto;
+  
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -25px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@keyframes loading{
+  from{
+    visibility: visible;
+  }
+  to{
+    visibility: hidden;
+  }
+}
+
