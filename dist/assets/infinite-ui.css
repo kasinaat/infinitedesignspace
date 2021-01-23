@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
 body {
-    font-family: "Century Gothic", 'Lato', sans-serif;
+    font-family: "Poppins";
 }
 a {
     text-decoration: none;
@@ -89,10 +91,7 @@ a {
 .et-hero-tab {
     display: inline-block;
     color: #000;
-    letter-spacing: 0.1rem;
     transition: all 0.5s ease;
-    font-size: 0.8rem;
-    width: 15%;
 }
 .text-darker{
   font-weight: bolder;
@@ -103,9 +102,10 @@ a {
 .et-tab{
     cursor: pointer;
     display: inline-block;
-    min-width: 12%;
     text-align: center;
     margin-top: 3%;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .top-logo{
     display: inline-block;
@@ -167,10 +167,48 @@ a {
 .in-mt-140{
     margin-top: 140px;
 }
-.company-title{
+.ids-mt-30{
+  margin-top: 30px;
+}
+.ids-f-33{
+  font-size: 33px;
+}
+hr{
+	border: 1px solid #8b8b8b !important;
+}
+.ids-inline{
+  display: inline;
+}
+.ids-social-icon{
+  margin-right: 20px;
+}
+.ids-social-icon i{
+  scale: 1.5;
+}
+i:hover{
+  transition: all 0.2s linear 0s;
+}
+.ids-no-decoration{
+  text-decoration: none;
+  color: #000;
+}
+.ids-mt-40{
+  margin-top: 40px;
+}
+.pull-left{
+  float: left;
+}
+.ids-text-align-left{
+  text-align: left;
+}
+.ids-top-nav{
+  margin: auto;
+  padding-right: 8%;
+}
+.ids-title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1rem;
-    font-weight: 100;
+    /* font-weight: 100; */
 }
 .company-title-bold{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
