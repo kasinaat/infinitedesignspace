@@ -113,7 +113,7 @@ define('infinite-ui/tests/pods/application/controller.jshint.lint-test', ['expor
   QUnit.module('JSHint | pods/application/controller.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'pods/application/controller.js should pass jshint.\npods/application/controller.js: line 6, col 13, \'$\' is not defined.\npods/application/controller.js: line 7, col 28, \'$\' is not defined.\n\n2 errors');
+    assert.ok(false, 'pods/application/controller.js should pass jshint.\npods/application/controller.js: line 6, col 13, \'$\' is not defined.\npods/application/controller.js: line 7, col 28, \'$\' is not defined.\npods/application/controller.js: line 9, col 13, \'$\' is not defined.\npods/application/controller.js: line 10, col 13, \'$\' is not defined.\n\n4 errors');
   });
 });
 define('infinite-ui/tests/pods/application/route.jshint.lint-test', ['exports'], function (exports) {
