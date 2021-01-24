@@ -1,2 +1,15 @@
 /node_modules
-/infinite-ui
+/infinite-ui/node_modules
+/infinite-ui/bower_components
+/infinite-ui/dist
+/infinite-ui/tmp
+
+
+# misc
+/infinite-ui/.sass-cache
+/infinite-ui/connect.lock
+/infinite-ui/coverage/*
+/libpeerconnection.log
+/infinite-ui/npm-debug.log*
+/infinite-ui/testem.log
+

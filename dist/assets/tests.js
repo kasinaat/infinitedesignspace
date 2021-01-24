@@ -107,13 +107,22 @@ define('infinite-ui/tests/helpers/start-app.jshint.lint-test', ['exports'], func
     assert.ok(true, 'helpers/start-app.js should pass jshint.');
   });
 });
+define('infinite-ui/tests/pods/about/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/about/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/about/route.js should pass jshint.');
+  });
+});
 define('infinite-ui/tests/pods/application/controller.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
   QUnit.module('JSHint | pods/application/controller.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'pods/application/controller.js should pass jshint.\npods/application/controller.js: line 6, col 13, \'$\' is not defined.\npods/application/controller.js: line 7, col 28, \'$\' is not defined.\npods/application/controller.js: line 9, col 13, \'$\' is not defined.\npods/application/controller.js: line 10, col 13, \'$\' is not defined.\n\n4 errors');
+    assert.ok(true, 'pods/application/controller.js should pass jshint.');
   });
 });
 define('infinite-ui/tests/pods/application/route.jshint.lint-test', ['exports'], function (exports) {
@@ -122,7 +131,43 @@ define('infinite-ui/tests/pods/application/route.jshint.lint-test', ['exports'],
   QUnit.module('JSHint | pods/application/route.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'pods/application/route.js should pass jshint.\npods/application/route.js: line 57, col 29, Expected \'!==\' and instead saw \'!=\'.\npods/application/route.js: line 44, col 28, \'element\' is defined but never used.\npods/application/route.js: line 80, col 42, \'model\' is defined but never used.\npods/application/route.js: line 10, col 9, \'$\' is not defined.\npods/application/route.js: line 11, col 36, \'$\' is not defined.\npods/application/route.js: line 13, col 9, \'$\' is not defined.\npods/application/route.js: line 14, col 9, \'$\' is not defined.\npods/application/route.js: line 19, col 25, \'$\' is not defined.\npods/application/route.js: line 20, col 9, \'$\' is not defined.\npods/application/route.js: line 35, col 22, \'$\' is not defined.\npods/application/route.js: line 35, col 56, \'$\' is not defined.\npods/application/route.js: line 36, col 12, \'$\' is not defined.\npods/application/route.js: line 37, col 13, \'$\' is not defined.\npods/application/route.js: line 40, col 13, \'$\' is not defined.\npods/application/route.js: line 48, col 9, \'$\' is not defined.\npods/application/route.js: line 49, col 22, \'$\' is not defined.\npods/application/route.js: line 50, col 29, \'$\' is not defined.\npods/application/route.js: line 51, col 32, \'$\' is not defined.\npods/application/route.js: line 51, col 53, \'$\' is not defined.\npods/application/route.js: line 52, col 16, \'$\' is not defined.\npods/application/route.js: line 52, col 53, \'$\' is not defined.\npods/application/route.js: line 54, col 33, \'$\' is not defined.\npods/application/route.js: line 71, col 9, \'$\' is not defined.\npods/application/route.js: line 72, col 9, \'$\' is not defined.\n\n24 errors');
+    assert.ok(false, 'pods/application/route.js should pass jshint.\npods/application/route.js: line 57, col 29, Expected \'!==\' and instead saw \'!=\'.\npods/application/route.js: line 44, col 28, \'element\' is defined but never used.\npods/application/route.js: line 80, col 42, \'model\' is defined but never used.\npods/application/route.js: line 10, col 9, \'$\' is not defined.\npods/application/route.js: line 11, col 36, \'$\' is not defined.\npods/application/route.js: line 13, col 9, \'$\' is not defined.\npods/application/route.js: line 14, col 9, \'$\' is not defined.\npods/application/route.js: line 19, col 25, \'$\' is not defined.\npods/application/route.js: line 20, col 9, \'$\' is not defined.\npods/application/route.js: line 35, col 22, \'$\' is not defined.\npods/application/route.js: line 35, col 56, \'$\' is not defined.\npods/application/route.js: line 36, col 12, \'$\' is not defined.\npods/application/route.js: line 37, col 13, \'$\' is not defined.\npods/application/route.js: line 40, col 13, \'$\' is not defined.\npods/application/route.js: line 48, col 9, \'$\' is not defined.\npods/application/route.js: line 49, col 22, \'$\' is not defined.\npods/application/route.js: line 50, col 29, \'$\' is not defined.\npods/application/route.js: line 51, col 32, \'$\' is not defined.\npods/application/route.js: line 51, col 53, \'$\' is not defined.\npods/application/route.js: line 52, col 16, \'$\' is not defined.\npods/application/route.js: line 52, col 53, \'$\' is not defined.\npods/application/route.js: line 54, col 33, \'$\' is not defined.\npods/application/route.js: line 71, col 9, \'$\' is not defined.\npods/application/route.js: line 72, col 9, \'$\' is not defined.\npods/application/route.js: line 85, col 13, \'$\' is not defined.\npods/application/route.js: line 86, col 13, \'$\' is not defined.\npods/application/route.js: line 90, col 13, \'$\' is not defined.\npods/application/route.js: line 91, col 28, \'$\' is not defined.\npods/application/route.js: line 3, col 7, \'StickyNavigation\' is defined but never used.\n\n29 errors');
+  });
+});
+define('infinite-ui/tests/pods/contact/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/contact/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/contact/route.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/pods/home/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/home/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/home/route.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/pods/projects/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/projects/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/projects/route.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/pods/services/route.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | pods/services/route.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/services/route.js should pass jshint.');
   });
 });
 define('infinite-ui/tests/resolver.jshint.lint-test', ['exports'], function (exports) {
@@ -156,6 +201,15 @@ define('infinite-ui/tests/test-helper.jshint.lint-test', ['exports'], function (
     assert.ok(true, 'test-helper.js should pass jshint.');
   });
 });
+define('infinite-ui/tests/transitions.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | transitions.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'transitions.js should pass jshint.');
+  });
+});
 define('infinite-ui/tests/unit/application/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
 
   (0, _emberQunit.moduleFor)('route:application', 'Unit | Route | application', {
@@ -175,6 +229,27 @@ define('infinite-ui/tests/unit/application/route-test.jshint.lint-test', ['expor
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/application/route-test.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/unit/pods/about/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:about', 'Unit | Route | about', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('infinite-ui/tests/unit/pods/about/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/pods/about/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/pods/about/route-test.js should pass jshint.');
   });
 });
 define('infinite-ui/tests/unit/pods/application/controller-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
@@ -218,6 +293,90 @@ define('infinite-ui/tests/unit/pods/application/route-test.jshint.lint-test', ['
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/pods/application/route-test.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/unit/pods/contact/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:contact', 'Unit | Route | contact', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('infinite-ui/tests/unit/pods/contact/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/pods/contact/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/pods/contact/route-test.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/unit/pods/home/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:home', 'Unit | Route | home', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('infinite-ui/tests/unit/pods/home/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/pods/home/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/pods/home/route-test.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/unit/pods/projects/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:projects', 'Unit | Route | projects', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('infinite-ui/tests/unit/pods/projects/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/pods/projects/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/pods/projects/route-test.js should pass jshint.');
+  });
+});
+define('infinite-ui/tests/unit/pods/services/route-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:services', 'Unit | Route | services', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('infinite-ui/tests/unit/pods/services/route-test.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/pods/services/route-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/pods/services/route-test.js should pass jshint.');
   });
 });
 define('infinite-ui/tests/unit/routes/application-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
